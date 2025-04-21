@@ -2,5 +2,9 @@
   {
     "name": "Sample Plugin",
     "entry": "./plugins/sample-plugin/plugin.js"
+  },
+  {
+    "name": "Vinoth Plugin",
+    "entry": "./plugins/vinoth-plugin/plugin.js"
   }
 ]
