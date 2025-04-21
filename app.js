@@ -1,8 +1,8 @@
-const fs = require('fs');
+const fs = require("fs");
 
-const pluginRegistry = JSON.parse(fs.readFileSync('plugins.json'));
+const pluginRegistry = require("./plugins.json").plugins;
 
-pluginRegistry.forEach(plugin => {
+pluginRegistry.forEach((plugin) => {
   try {
     const pluginModule = require(plugin.entry);
     console.log(`${plugin.name}: ${pluginModule.run()}`);

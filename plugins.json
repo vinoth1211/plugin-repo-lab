@@ -1,10 +1,15 @@
-[
-  {
-    "name": "Sample Plugin",
-    "entry": "./plugins/sample-plugin/plugin.js"
-  },
-  {
-    "name": "Vinoth Plugin",
-    "entry": "./plugins/vinoth-plugin/plugin.js"
+{
+  "plugins": [
+    {
+      "name": "Sample Plugin",
+      "entry": "./plugins/sample-plugin/plugin.js"
+    },
+    {
+      "name": "Vinoth Plugin",
+      "entry": "./plugins/vinoth-plugin/plugin.js"
+    }
+  ],
+  "dependencies": {
+    "chalk": "^4.0.0" 
   }
-]
+}
